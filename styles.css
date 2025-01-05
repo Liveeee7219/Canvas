@@ -1,9 +1,18 @@
+:root {
+  /* CSS HEX */
+  --russian-violet: #130330ff;
+  --charcoal: #434953ff;
+  --dark-pastel-green: #42b03aff;
+  --rich-black: #090117ff;
+}
+
+
 body {
-  background-color: #090117;
+  background-color: var(--rich-black);
 }
 
 h1 {
-  color: #42b03a;
+  color: var(--dark-pastel-green);
   font-family: "Fredoka";
   text-align: center;
 }
@@ -11,13 +20,13 @@ h1 {
 
 p {
   font-family: Comfortaa;
-  color: #42b03a;
+  color: var(--dark-pastel-green);
   font-size: large;
   text-align: center;
 }
 
 ul {
-  color: #090117;
+  color: var(--rich-black);
   font-family: Fredoka;
 }
 
@@ -39,21 +48,22 @@ table {
 input[type="button"] {
   width: 100%;
   padding: 20px 40px;
-  background-color: #130330;
-  color: #42b03a;
+  background-color: var(--russian-violet);
+  color: var(--dark-pastel-green);
   font-size: 24px;
   font-family: Fredoka;
   font-weight: bold;
   border: 2px solid black;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 input[type="text"] {
   padding: 20px 30px;
   font-size: 24px;
   font-weight: bold;
-  background-color: #130330;
-  color: #42b03a;
+  background-color: var(--russian-violet);
+  color: var(--dark-pastel-green);
   border: none;
   border-radius: 5px;
   border: 2px solid black;
@@ -63,17 +73,19 @@ input[type="text"] {
 
 .navbar {
   overflow: hidden;
-  background-color: #090117;
+  background-color: var(--rich-black);
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
   font-family: Fredoka;
-  color: white;
+  color: var(--dark-pastel-green);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: 0px solid black;
+  border-radius: 5px;
 }
 
 .dropdown {
@@ -86,22 +98,25 @@ input[type="text"] {
   border: none;
   outline: none;
   font-family: Fredoka;
-  color: white;
+  color: var(--dark-pastel-green);
   padding: 14px 16px;
   background-color: inherit;
   font-family: Fredoka;
   margin: 0;
+  border: 0px solid black;
+  border-radius: 5px;
 }
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #42b03a;
+  background-color: var(--russian-violet);
+  cursor: pointer;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #130330;
+  background-color: var(--rich-black);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -110,15 +125,17 @@ input[type="text"] {
 .dropdown-content a {
   float: none;
   font-family: Fredoka;
-  color: white;
+  color: var(--dark-pastel-green);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  border: 0px solid black;
+  border-radius: 5px;
 }
 
 .dropdown-content a:hover {
-  background-color: #42b03a;
+  background-color: var(--russian-violet);
 }
 
 .dropdown:hover .dropdown-content {
