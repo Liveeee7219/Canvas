@@ -1,0 +1,126 @@
+body {
+  background-color: #090117;
+}
+
+h1 {
+  color: #42b03a;
+  font-family: "Fredoka";
+  text-align: center;
+}
+
+
+p {
+  font-family: Comfortaa;
+  color: #42b03a;
+  font-size: large;
+  text-align: center;
+}
+
+ul {
+  color: #090117;
+  font-family: Fredoka;
+}
+
+fredoka-h1 {
+  font-family: "Fredoka";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+table {
+  border: 0px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: #130330;
+  color: #42b03a;
+  font-size: 24px;
+  font-family: Fredoka;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding: 20px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #130330;
+  color: #42b03a;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #090117;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-family: Fredoka;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-family: Fredoka;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Fredoka;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #42b03a;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #130330;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  font-family: Fredoka;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #42b03a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
