@@ -4,6 +4,7 @@
   --charcoal: #434953ff;
   --dark-pastel-green: #42b03aff;
   --rich-black: #090117ff;
+  --onyx: #202020;
 }
 
 
@@ -15,6 +16,11 @@ h1 {
   color: var(--dark-pastel-green);
   font-family: "Fredoka";
   text-align: center;
+}
+
+h2 {
+  text-align: center;
+  transform: scale(110%);
 }
 
 
@@ -151,17 +157,21 @@ input[type="text"] {
   align-items: center;
   padding: 10px 15px;
   gap: 15px;
-  background-color: #181717;
-  outline: 3px #181717 solid;
+  background-color: var(--onyx);
+  outline: 3px var(--onyx) solid;
   outline-offset: -3px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   transition: 400ms;
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
 }
 
-.button .text {
-  color: white;
+.button .link {
+  color: var(--dark-pastel-green);
+  font-family: Fredoka;
   font-weight: 700;
   font-size: 1em;
   transition: 400ms;
@@ -173,12 +183,13 @@ input[type="text"] {
 
 .button:hover {
   background-color: transparent;
+  outline: 3px var(--charcoal) solid;
 }
 
-.button:hover .text {
-  color: #181717;
+.button:hover .link {
+  color: var(--charcoal);
 }
 
 .button:hover svg path {
-  fill: #181717;
+  fill: var(--charcoal);
 }
